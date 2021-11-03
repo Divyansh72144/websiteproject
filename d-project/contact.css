@@ -53,24 +53,13 @@ li:hover {
 i {
   align-self: center;
 }
-@media only screen and (max-width: 500px) {
-  header {
-    background-color: lightblue;
+@media screen and (max-width: 600px) {
+  body {
     flex-direction: column;
-  
   }
 }
-@media only screen and (max-width: 500px) {
-  .mini_container {
-    background-color:black;
-    flex-direction: column;
-  
-  }
-}
-@media only screen and (max-width: 400px) {
-  .mini_container {
-    background-color:black;
-    flex-direction: column;
-  
+@media screen and (max-width: 500px) {
+  body {
+    flex-direction: column-reverse;
   }
 }

@@ -49,13 +49,6 @@ footer{
     }
 }
 @media only screen and (max-width: 500px) {
-    main {
-      background-color: lightblue;
-      flex-direction: column;
-    
-    }
-}
-@media only screen and (max-width: 500px) {
     .mini_container {
       background-color:black;
       flex-direction: column;
