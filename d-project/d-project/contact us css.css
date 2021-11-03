@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding:0;
+    
+    }
+
+header{background-color:black;}
+.name{text-align: start;
+color: aliceblue;}
+.mylogo{
+        width:200px;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    }
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    border: 1px dotted red;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap ;
+justify-content:space-around;
+height: 600px;
+align-items: center;
+
+
+}
+main{background:url('custombackground.jpg') no-repeat center center fixed;
+    background-size:cover;}
+
+
+
+ li { border:1px solid black;
+    margin:0.5em;
+    padding:0.5em;
+    
+}
+@media screen and (max-width: 600px) {
+    body {
+      flex-direction: column;
+    }
+  }
+@media screen and (max-width: 500px) {
+    body {
+      flex-direction: column-reverse;
+      
+      
+    }
+  }
+li:hover{background-color:lightblue;}
