@@ -50,3 +50,11 @@ main{background:url('custombackground.jpg') no-repeat center center fixed;
     }
   }
 li:hover{background-color:lightblue;}
+footer {
+  height: 70px;
+  width: 100%;
+  background-color: grey;
+  text-align: center;
+  color: black;
+  bottom: 0;
+}

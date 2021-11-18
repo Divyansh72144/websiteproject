@@ -21,17 +21,15 @@ img {
   height: auto;
 }
 
-
 .main_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   background-color: lightgreen;
-  
 }
 
 .mini_container {
-  justify-self:center;
+  justify-self: center;
   display: flex;
   flex-direction: column;
   background-color: bisque;
@@ -41,15 +39,13 @@ img {
   padding: 20px;
   border-radius: 10px;
   width: 80%;
-  justify-content:center;
-
+  justify-content: center;
 }
 
 li {
   display: inline;
   margin: 100px;
   color: white;
-  
 }
 
 @media only screen and (max-width: 740px) {
@@ -57,7 +53,7 @@ li {
     background-color: red;
   }
   .main_container {
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -104,8 +100,14 @@ footer {
 }
 
 a {
-    
 }
-.active{background-color:lightgreen;
-padding:0.em;
+.active {
+  background-color: lightgreen;
+}
+a:link {
+  color: white;
+}
+a:hover {
+  color: blue;
+  transition: 4s;
 }

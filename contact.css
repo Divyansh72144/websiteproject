@@ -19,16 +19,21 @@ header {
   height: 50px;
   width: 50px;
   margin: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  border: 1px dotted red;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -53,24 +58,54 @@ li:hover {
 i {
   align-self: center;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   header {
     background-color: lightblue;
     flex-direction: column;
-  
   }
 }
 @media only screen and (max-width: 500px) {
-  .mini_container {
-    background-color:black;
-    flex-direction: column;
-  
+  header {
+    background-color: grey;
   }
+}
+footer {
+  flex-direction: column;
 }
 @media only screen and (max-width: 400px) {
   .mini_container {
-    background-color:black;
+    background-color: lightcoral;
     flex-direction: column;
-  
+    grid-template-columns: 1fr;
   }
+}
+footer {
+  height: 70px;
+  width: 100%;
+  background-color: grey;
+  text-align: center;
+  color: black;
+  bottom: 0;
+  margin-top: 18em;
+}
+.bottomlinks {
+  text-decoration: none;
+  border: none;
+}
+.bottomlinks:hover {
+  background-color: grey;
+}
+.active {
+  background-color: greenyellow;
+}
+
+.active {
+  background-color: lightgreen;
+}
+a:link {
+  color: white;
+}
+a:hover {
+  color: blue;
+  transition: 4s;
 }
