@@ -84,9 +84,11 @@ footer {
   bottom: 0;
   margin-top: 18em;
 }
+
 .bottomlinks {
   text-decoration: none;
   border: none;
+  flex-wrap: nowrap;
 }
 .bottomlinks:hover {
   background-color: grey;

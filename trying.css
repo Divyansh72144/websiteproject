@@ -1,86 +1,92 @@
-*{
-    margin: 0;
-    padding:0;
-    
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-header{background-color:black;}
-.name{text-align: start;
-color: aliceblue;}
-.mylogo{
-        width:200px;
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-    }
-img{border-radius: 10px;}
-.p{color:bisque}
+header {
+  background-color: black;
+}
+.name {
+  text-align: start;
+  color: aliceblue;
+}
+.mylogo {
+  width: 200px;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+img {
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.p {
+  color: bisque;
+}
 
 button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: lightblue;
+  color: black;
+}
+footer {
+  height: 70px;
+  width: 100%;
+  background-color: grey;
+  text-align: center;
+  color: black;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    background-color: lightblue;
+    flex-direction: column;
   }
-  button:hover{
-      background-color:lightblue;
-      color: black;
-      
+}
+@media only screen and (max-width: 500px) {
+  main {
+    background-color: lightblue;
+    flex-direction: column;
   }
-footer{
-    height: 70px;;
-    width: 100%;
-    background-color:grey;
-    text-align: center;
-    color: black;
-    bottom: 0;}
-
-@media only screen and (max-width: 500px) {
-    header {
-      background-color: lightblue;
-      flex-direction: column;
-    
-    }
 }
 @media only screen and (max-width: 500px) {
-    main {
-      background-color: lightblue;
-      flex-direction: column;
-    
-    }
-}
-@media only screen and (max-width: 500px) {
-    .mini_container {
-      background-color:black;
-      flex-direction: column;
-    
-    }
+  .mini_container {
+    background-color: black;
+    flex-direction: column;
+  }
 }
 
-
-
-.main_container{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
-    background-color:lightgreen;
-    padding: 10px;
+.main_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: lightgreen;
+  padding: 10px;
 }
-.mini_container{
-    background-color:bisque;
-    border:1px solid;
-    font-size: 30px;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
+.mini_container {
+  background-color: bisque;
+  border: 1px solid;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
 }
-li{display: inline;
-margin: 100px;
-color: white;
+li {
+  display: inline;
+  margin: 100px;
+  color: white;
 }

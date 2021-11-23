@@ -1,0 +1,42 @@
+1) In About Us.css I changed ul display to grid and made 4 equal 25 view width columns and decreased margin to 10
+
+footer ul {
+  display: grid;
+  grid-template-columns: repeat(4, 25vw);
+  grid-template-rows: max-content;
+}
+
+li {
+  display: inline-block;
+  margin: 10px;
+}
+
+2) In contact.css I added nowrap to bottom links because previously 'li' selector has flex-wrap: wrap which aligns main li items in the body. 
+
+.bottomlinks {
+  text-decoration: none;
+  border: none;
+  flex-wrap: nowrap;
+}
+
+
+3) In trying2.css I removed all id selectors for images and buttons. And added
+
+.mini_container a img {
+  width: 80%;
+  height: auto;
+}
+
+4) I didn't get what did you mean by title in Q5. 
+
+5) In aboutus.css . For hovering effect with your footer logos you need to change color of 'i' inside the 'a' element respectively. So this works:
+
+#twitter:hover i {
+  color: aqua;
+}
+
+6) in Aboutus.css I added this code and everything has same hovering effect except Twitter because we selected it by its id so it is more spesific. You can add id to particular element and replace li with #idOfTheElement a:hover { what ever you want}
+
+li a:hover {
+  color: yellow;
+}

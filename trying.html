@@ -1,97 +1,111 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="trying2.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
-   </head>
-   <body>
-      <header>
-         <div class="startheader">
-            <img src="logo.png" alt="google logo" class="mylogo">
-            <h1 class="name">Discover endlessly</h1>
-      </header>
-      <main>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="trying2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="google logo" class="mylogo" />
+      <h1 class="name">Discover endlessly</h1>
+    </header>
+    <main>
       <div class="main_container">
-      <div class="mini_container">
-      <a href="https://mail.google.com/mail/u/0/">
-      <img src="gmail.jpg" alt="google logo" width=80% height=50%>
-      </a>
-      <a href='https://mail.google.com/mail/u/0/'>
-      <button>
-      Gmail
-      </button>
-      </a>
-      </div>
-      <div class="mini_container">
-      <a href="https://www.google.com/maps">
-      <img src="googlemaps.jpg" alt="google logo" width=80% height=50%>
-      </a>
-      <a href='https://www.google.com/maps'>
-      <button>
-      Google&nbsp;Maps
-      </button>
-      </a>
-      </div>
-      <div class="mini_container">
-      <a href="https://lens.google/">
-      <img src="googlelens.png" alt="google logo" width=80% height=50%>
-      </a>
-      <a href='https://lens.google/'>
-      <button>
-      Google&nbsp;Lens
-      </button>
-      </a>
-      </div>
-      <div class="mini_container">
-      <a href="https://lens.google/">
-      <img src="Google-Street-View-for-PC.jpg" alt="google logo" width=80% height=50%>
-      </a>
-      <a href='https://www.google.com/streetview/'>
-      <button>
-      Google&nbsp;Street&nbsp;View
-      </button>
-      </a>
-      </div>
-      <div class="mini_container">
-      <a href='https://www.google.com/calendar/about/'>
-      <img src="googlecalender.jpg" alt="google logo" width=80% height=50%>
-      </a>
-      <a href='https://www.google.com/calendar/about/'>
-      <button>
-      Google&nbsp;Calender
-      </button>
-      </a>
-      </div>
-      <div class="mini_container">
-      <a href='https://www.google.com/fit/'>
-      <img src="googlefit.png" alt="google logo" width=80% height=50%>
-      </a>
-      <a href='https://www.google.com/fit/'>
-      <button>
-      Google&nbsp;Calender
-      </button>
-      </a>
-      </div>
-      </div>
-      </main>
-      <footer>
-         <ul>
-            <li><a href="contact.html">Contact</li>
-            </a>
-            <li><a href="About us.html">About us</li>
-            </a>
-            <li class="active">Main</li>
-         </ul>
-      </footer>
-   </body>
-</html>
+        <div class="mini_container">
+          <a href="https://mail.google.com/mail/u/0/">
+            <img src="gmail.jpg" id="gmail" alt="google logo" />
+          </a>
 
+          <button
+            id="gmailbutton"
+            onclick="location.href = 'https://gmail.com'"
+          >
+            Gmail
+          </button>
+        </div>
+        <div class="mini_container">
+          <a href="https://www.google.com/maps">
+            <img src="googlemaps.jpg" id="googlemaps" alt="google maps logo" />
+          </a>
+          <button
+            id="googlemapsbutton"
+            onclick="location.href = 'https://googlemaps.com'"
+          >
+            Google&nbsp;Maps
+          </button>
+        </div>
+        <div class="mini_container">
+          <a href="https://lens.google/">
+            <img src="googlelens.png" id="googlelens" alt="google lens logo" />
+          </a>
+          <button
+            id="googlelensbutton"
+            onclick="location.href = 'https://lens.google'"
+          >
+            Google&nbsp;Lens
+          </button>
+        </div>
+        <div class="mini_container">
+          <a href="https://www.google.com/streetview/">
+            <img
+              src="Google-Street-View-for-PC.jpg"
+              id="streetview"
+              alt="google logo"
+            />
+          </a>
+
+          <button
+            id="googlestreetviewbutton"
+            onclick="location.href = 'https://www.google.com/streetview/'"
+          >
+            Google&nbsp;Street&nbsp;View
+          </button>
+        </div>
+        <div class="mini_container">
+          <a href="https://www.google.com/calendar/about/">
+            <img
+              src="googlecalender.jpg"
+              id="googlecalender"
+              alt="google logo"
+            />
+          </a>
+
+          <button
+            id="googlecalenderbutton"
+            onclick="location.href='https://calendar.google.com/calendar'"
+          >
+            Google&nbsp;Calender
+          </button>
+        </div>
+        <div class="mini_container">
+          <a href="https://www.google.com/fit/">
+            <img src="googlefit.png" id="googlefit" alt="google fit logo" />
+          </a>
+
+          <button
+            id="googlefitbutton"
+            onclick="location.href = 'https://www.google.com/fit/'"
+          >
+            Google&nbsp;Fit
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="About us.html">About us</a></li>
+        <li class="active">Main</li>
+      </ul>
+    </footer>
+  </body>
+</html>
