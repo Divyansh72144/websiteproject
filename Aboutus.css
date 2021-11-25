@@ -10,12 +10,14 @@ header {
   text-align: start;
   color: aliceblue;
 }
+
 .mylogo {
-  border-radius: 10px;
-  width: 200px;
-  height: 50px;
-  width: 50px;
-  margin: 10px;
+  border-radius:0.625em;
+  
+  height:3.125em;
+  width:3.125em;
+  margin: 0.625em;
+
 }
 main {
   height: auto;
@@ -28,7 +30,7 @@ main {
 }
 .define {
   font-family: "Roboto", sans-serif;
-  font-size: 30px;
+  font-size: 1.875emx;
 }
 
 main {
@@ -41,9 +43,10 @@ h6 {
 }
 
 main img {
-  width: 200px;
-  margin: 10px;
-  border-radius: 20px;
+  width: 12.5em;
+  margin: 0.625em;
+  border-radius: 1.25em;
+
 }
 
 p {
@@ -52,15 +55,15 @@ p {
 
 .whoisgoogle {
   font-family: "Raleway", sans-serif;
-  font-size: 40px;
+  font-size: 2.5em;
 }
 h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 0.9375em;
 }
 footer {
   text-align: center;
-  height: 70px;
+  height: 4.375em;
   width: 100%;
   background-color: grey;
   color: black;
@@ -73,7 +76,7 @@ footer ul {
 }
 li {
   display: inline-block;
-  margin: 10px;
+  margin: 0.625em;
 }
 
 .active {
@@ -105,5 +108,21 @@ li {
 }
 
 li a:hover {
-  color: yellow;
+  color:brown;
+
+}
+#facebook:hover i{color:deepskyblue;} 
+#instagram:hover i{color:magenta;}
+#youtube:hover i{color:red;}
+footer li{padding: 0.4em;}
+@media only screen and (max-width: 740px) {
+  footer ul {
+      display: flex;
+      flex-direction: column;
+  }
+  footer{height:23em;}
+
+  footer li {
+      margin: 0;
+  }
 }

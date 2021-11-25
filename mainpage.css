@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+.mini_container{position:relative}
+.mini container button{position: absolute;
+bottom:10px;}
+
+header {
+  background-color: black;
+  width: 100%;
+}
+.name {
+  text-align: start;
+  color: aliceblue;
+}
+.mylogo {
+  width: 12.15em;
+  height:3.125em;
+  width:3.125em;
+  margin: 0.625em;
+}
+footer li{padding: 0.12em;}
+
+
+.main_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: lightgreen;
+}
+
+.mini_container {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+  border: 1px solid;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+
+li {
+  display: inline;
+  margin: 100px;
+  color: white;
+}
+button{align-self: center;
+}
+
+@media only screen and (max-width: 740px) {
+  .mini_container {
+    background-color: red;
+  }
+  .main_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  header {
+    background-color: lightblue;
+    flex-direction: column;
+  }
+  .mini_container {
+    background-color: black;
+    flex-direction: column;
+  }
+  .main_container {
+    grid-template-columns: 1fr;
+  }
+}
+  
+
+button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  flex-basis: max-content;
+}
+
+button:hover {
+  background-color: lightblue;
+  color: black;
+}
+
+footer {
+  height: 70px;
+  width: 100%;
+  background-color: grey;
+  text-align: center;
+  color: black;
+  bottom: 0;
+}
+
+.active {
+  background-color: lightgreen;
+}
+a:link {
+  color: white;
+}
+a:hover {
+  color: blue;
+  transition: 1s;
+}
+@media only screen and (max-width: 740px) {
+  footer ul {
+      display: flex;
+      flex-direction: column;
+  }
+
+  footer li {
+      margin: 0;
+  }
+}
